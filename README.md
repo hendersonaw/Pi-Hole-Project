@@ -6,13 +6,15 @@ This project is to create a Pi-Hole that blocks adult content via DNS on your ho
 The best hardware to use for this project is a [Raspberry Pi 4](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/), but they can be pretty hard to find right now due to a massive chip shortage. If you aren't able to get access to one, a good alternative to use is the [Orange Pi Zero 2](https://www.amazon.com/Orange-Pi-Allwinner-Open-Source-Android10/dp/B0B973214J). You'll also want to make sure you have a [microSD card](https://www.amazon.com/dp/B0B7NVMBPL) and an [Ethernet cable](https://www.amazon.com/dp/B00C2CBBAM). You can complete this project without an Ethernet cable, but it will make it a lot easier. The rest of the documentation will assume you are using an Ethernet cable. 
 
 ## Installing and Setting Up Pi-Hole
-More information on how to install Pi-Hole can be found on the [Pi-Hole website](https://pi-hole.net/). 
+Here are the general steps you need to follow to install Pi-Hole: 
 1. Install an Operating System on your microSD card via [Balena Etcher](https://www.balena.io/etcher). 
 2. Once installed, plug it into your Pi and turn it on. 
-3. Once logged into the command prompt, run the following command to install Pi-Hole: 
+3. Once logged into the command prompt, run the following command in a command line to install Pi-Hole: 
 ```
 curl -sSL https://install.pi-hole.net | bash
 ```
+More information on how to install Pi-Hole can be found on the [Pi-Hole website](https://pi-hole.net/). 
+
 ### Networking... :(
 Because networking can be so different for everyone, I can't provide an exact step-by-step list of instructions for you. However, I'll do my best to provide the information for you to learn how to find the information needed for your specific infrastructure. For the following instructions, I will mostly assume that you are working on a Windows PC, but will try to assist any Linux users along the way (no promises...). 
 
