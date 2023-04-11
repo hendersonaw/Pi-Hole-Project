@@ -2,6 +2,18 @@
 
 This project is to create a Pi-Hole that blocks adult content via DNS on your home network. It includes various blocklists and instructions on how to set everything up. 
 
+## Table of Contents
+1. [Hardware](/README.md#Hardware)
+2. [Installing and Setting Up Pi-Hole](/README.md#installing-and-setting-up-pi-hole)
+    - [Networking...](/README.md#networking-)
+    - [Adding the Blocklists via Adlists Feature](/README.md#adding-the-blocklists-via-adlists-feature)
+    - [Force SafeSearch on Search Engines and YouTube](/README.md#force-safesearch-on-search-engines-and-youtube)
+    - [Changing Default DNS Servers to Cloudflare (1.1.1.1)](/README.md#changing-default-dns-servers-to-cloudflare-1111)
+3. [Creating Cronjobs for Heartbeat via Healthchecks.io](/README.md#creating-cronjobs-for-heartbeat-via-healthchecksio)
+    - [Healthchecks.io Setup](/README.md#healthchecksio-setup)
+    - [Pi-Hole Setup](README.md#pi-hole-setup)
+4. [Conclusion](/README.md#conclusion)
+
 ## Hardware
 The best hardware to use for this project is a [Raspberry Pi 4](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/), but they can be pretty hard to find right now due to a massive chip shortage. If you aren't able to get access to one, a good alternative to use is the [Orange Pi Zero 2](https://www.amazon.com/Orange-Pi-Allwinner-Open-Source-Android10/dp/B0B973214J). You'll also want to make sure you have a [microSD card](https://www.amazon.com/dp/B0B7NVMBPL) and an [Ethernet cable](https://www.amazon.com/dp/B00C2CBBAM). You can complete this project without an Ethernet cable, but it will make it a lot easier. The rest of the documentation will assume you are using an Ethernet cable. 
 
