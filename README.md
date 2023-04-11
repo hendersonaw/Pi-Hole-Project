@@ -30,8 +30,59 @@ Now, type your Pi's IP address into the browser, followed by "/admin" (e.g., "19
 Log into the web portal using the password given to you at the end of Pi-Hole's installation. 
 
 ### Adding the Blocklists via Adlists Feature
+To add massive amounts of domains to the blocklist, click on the Adlists button in the navigation menu on the left side. Then add the following lists to block NSFW domains: 
+```
+https://nsfw.oisd.nl/
+https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list
+```
+For additional domains, I have created a few more lists to include grey sites that aren't blocked by either of the above lists: 
+```
+https://raw.githubusercontent.com/hendersonaw/Pi-Hole-Project/main/Alternate%20Search%20Engine%20List
+https://raw.githubusercontent.com/hendersonaw/Pi-Hole-Project/main/Libreddit%20Public%20Sites
+https://raw.githubusercontent.com/hendersonaw/Pi-Hole-Project/main/Picture%20Sharing%20Sites
+https://raw.githubusercontent.com/hendersonaw/Pi-Hole-Project/main/Proxy%20Sites
+https://raw.githubusercontent.com/hendersonaw/Pi-Hole-Project/main/URL%20Screenshot%20Sites
+```
+
+Once you have added the lists you want to block, expand the "Tools" section in the left navigation bar and click "Update Gravity". Click on the big blue bar that says "Update" and wait for it to complete. You'll know it's done when you see a big green bar that says "Success!"
+
+### Force SafeSearch on Search Engines and YouTube
+If you want to enforce SafeSearch on Search Engines and restrictions on YouTube on all devices on your network, expand the "Local DNS" section and click on "DNS Records". Then add the following local DNS domains: 
+```
+Domain                          IP Address
+----------------------------    --------------
+forcesafesearch.google.com      216.239.38.120
+restrict.youtube.com            216.239.38.120
+restrictmoderate.youtube.com    216.239.38.119
+safe.duckduckgo.com              52.250.41.2
+strict.bing.com                 204.79.197.220
+```
+
+Then in the left navigation menu, click on "CNAME Records" and add the following local CNAME records: 
+```
+Domain                          Target Domain
+------------------------        -----------------------------
+duckduckgo.com                  safe.duckduckgo.com
+m.youtube.com                   restrictmoderate.youtube.com
+www.bing.com                    strict.bing.com
+www.duckduckgo.com              safe.duckduckgo.com
+www.google.com                  forcesafesearch.google.com
+www.youtube-nocookie.com        restrictmoderate.youtube.com
+www.youtube.com                 restrictmoderate.youtube.com
+youtube.googleapis.com          restrictmoderate.youtube.com
+youtubei.googleapis.com         restrictmoderate.youtube.com
+```
+There are two levels of restricting Youtube, "Restrict Moderate" and "Restrict". If you find that the moderate YouTube restriction is not enough for you, you can make it even stricter by changing "restrictmoderate.youtube.com" to "restrct.youtube.com" in the Target Domain. 
 
 ### Changing Default DNS Servers to Cloudflare (1.1.1.1)
+Now we'll change our default DNS servers from Google to Cloudflare's Family DNS server. In the navigation menu, click on "Settings". At the top of the screen, click on the "DNS" tab. Unselect all checkboxes on the "Upstream DNS Servers" on the left side, then check all 4 Custom "Upstream DNS Servers" on the right side. Add the following IP addresses in the Custom IP fields: 
+```
+Custom 1 (IPv4) - 1.1.1.3
+Custom 2 (IPv4) - 1.0.0.3
+Custom 3 (IPv6) - 2606:4700:4700::1113
+Custom 4 (IPv6) - 2606:4700:4700::1003
+```
+This will provide additional security and use Cloudflare's blocklists in combination with your Adlists. 
 
 ## Creating Cronjobs for Heartbeat via Healthchecks.io
 
@@ -76,3 +127,6 @@ Select which editor to use (if you're not sure, pick 1). At the bottom of the fi
 ```
 
 For more information on scheduling a cronjob, see this [link](https://crontab.guru/). 
+
+## Conclusion
+You should be all set! I hope you found this project to be useful. If there's any details I left out, feel free to reach out and I'll update the instructions accordingly. Thanks for reading!
