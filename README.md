@@ -49,11 +49,11 @@ https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists
 ```
 For additional domains, I have created a few more lists to include grey sites that aren't blocked by either of the above lists: 
 ```
-https://raw.githubusercontent.com/hendersonaw/Pi-Hole-Project/main/Alternate%20Search%20Engine%20List
-https://raw.githubusercontent.com/hendersonaw/Pi-Hole-Project/main/Libreddit%20Public%20Sites
-https://raw.githubusercontent.com/hendersonaw/Pi-Hole-Project/main/Picture%20Sharing%20Sites
-https://raw.githubusercontent.com/hendersonaw/Pi-Hole-Project/main/Proxy%20Sites
-https://raw.githubusercontent.com/hendersonaw/Pi-Hole-Project/main/URL%20Screenshot%20Sites
+https://raw.githubusercontent.com/hendersonaw/Pi-Hole-Project/main/lists/Alternate%20Search%20Engine%20List
+https://raw.githubusercontent.com/hendersonaw/Pi-Hole-Project/main/lists/Libreddit%20Public%20Sites
+https://raw.githubusercontent.com/hendersonaw/Pi-Hole-Project/main/lists/Picture%20Sharing%20Sites
+https://raw.githubusercontent.com/hendersonaw/Pi-Hole-Project/main/lists/Proxy%20Sites
+https://raw.githubusercontent.com/hendersonaw/Pi-Hole-Project/main/lists/URL%20Screenshot%20Sites
 ```
 
 Once you have added the lists you want to block, expand the "Tools" section in the left navigation bar and click "Update Gravity". Click on the big blue bar that says "Update" and wait for it to complete. You'll know it's done when you see a big green bar that says "Success!"
