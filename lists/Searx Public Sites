@@ -28,6 +28,10 @@ search.broker
 www.search.broker
 search.bus-hit.me
 www.search.bus-hit.me
+search.datura.network
+www.search.datura.network
+search.daturab6drmkhyeia4ch5gvfc2f3wgo6bhjrv3pz6n7kxmvoznlkq4yd.onion
+www.search.daturab6drmkhyeia4ch5gvfc2f3wgo6bhjrv3pz6n7kxmvoznlkq4yd.onion
 search.demoniak.ch
 www.search.demoniak.ch
 search.gcomm.ch
@@ -42,12 +46,8 @@ search.inetol.net
 www.search.inetol.net
 searchpie7fejn4wctzm6fgm6oz5vnziltfzzuec6b4qmkr3wrqaoqqd.onion
 www.searchpie7fejn4wctzm6fgm6oz5vnziltfzzuec6b4qmkr3wrqaoqqd.onion
-search.itstechtime.com
-www.search.itstechtime.com
 search.leptons.xyz
 www.search.leptons.xyz
-search.lvkaszus.pl
-www.search.lvkaszus.pl
 search.mdosch.de
 www.search.mdosch.de
 search.nadeko.net
@@ -72,6 +72,8 @@ search.sapti.me
 www.search.sapti.me
 search.smnz.de
 www.search.smnz.de
+search.starless.one
+www.search.starless.one
 search.upinmars.com
 www.search.upinmars.com
 searx.aleteoryx.me
@@ -94,8 +96,6 @@ searx.daetalytica.io
 www.searx.daetalytica.io
 searx.ee
 www.searx.ee
-searx.fmhy.net
-www.searx.fmhy.net
 searx.headpat.exchange
 www.searx.headpat.exchange
 searx.juancord.xyz
@@ -130,6 +130,10 @@ searx.work
 www.searx.work
 searx.zhenyapav.com
 www.searx.zhenyapav.com
+searxng.brihx.fr
+www.searxng.brihx.fr
+searxng.ca
+www.searxng.ca
 searxng.ch
 www.searxng.ch
 searxng.site
