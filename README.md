@@ -84,7 +84,7 @@ www.youtube.com                 restrictmoderate.youtube.com
 youtube.googleapis.com          restrictmoderate.youtube.com
 youtubei.googleapis.com         restrictmoderate.youtube.com
 ```
-There are two levels of restricting Youtube, "Restrict Moderate" and "Restrict". If you find that the moderate YouTube restriction is not enough for you, you can make it even stricter by changing "restrictmoderate.youtube.com" to "restrct.youtube.com" in the Target Domain. 
+There are two levels of restricting Youtube, "Restrict Moderate" and "Restrict". If you find that the moderate YouTube restriction is not enough for you, you can make it even stricter by changing "restrictmoderate.youtube.com" to "restrict.youtube.com" in the Target Domain. 
 
 ### Changing Default DNS Servers to Cloudflare (1.1.1.1)
 Now we'll change our default DNS servers from Google to Cloudflare's Family DNS server. In the navigation menu, click on "Settings". At the top of the screen, click on the "DNS" tab. Unselect all checkboxes on the "Upstream DNS Servers" on the left side, then check all 4 Custom "Upstream DNS Servers" on the right side. Add the following IP addresses in the Custom IP fields: 
